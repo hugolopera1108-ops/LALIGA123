@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FootballHub - Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+            <div style="background: #ffffff; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px;">
+                ⚽
+            </div>
+            <div class="logo-text">
+                <h1>LALIGA</h1>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="equipos.html">Equipos</a></li>
+                <li><a href="tabla.html">Clasificación</a></li>
+                <li><a href="partidos.html">Partidos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <main>
+        <h2>📧 Contáctanos</h2>
+        
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+            <div>
+                <h3>Información de contacto</h3>
+                <p><strong>📞 Teléfono:</strong> +34 123 456 789</p>
+                <p><strong>📧 Email:</strong> info@footballhub.com</p>
+                <p><strong>📍 Dirección:</strong> Caldel Fútbol, 123 - Madrid</p>
+                <p><strong>🕒 Horario:</strong> Lunes a Viernes de 9:00 a 18:00</p>
+            </div>
+            
+            <div>
+                <h3>Envíanos un mensaje</h3>
+                <form id="formularioContacto">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                        <div id="error-nombre" class="error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <div id="error-email" class="error"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="asunto">Asunto:</label>
+                        <select id="asunto" name="asunto">
+                            <option value="consulta">Consulta general</option>
+                            <option value="sugerencia">Sugerencia</option>
+                            <option value="problema">Reportar problema</option>
+                            <option value="colaboracion">Colaboración</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        <div id="error-mensaje" class="error"></div>
+                    </div>
+                    
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+<footer>
+    <p>&copy; 2025 FootballHub - Proyecto ASIX</p>
+</footer>
+
+<script src="../js/data.js"></script>
+<script src="../js/ui.js"></script>
+<script src="../js/filters.js"></script>
+<script src="../js/app.js"></script>
+</body>
+</html>

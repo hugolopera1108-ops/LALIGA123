@@ -1,0 +1,184 @@
+{
+    "equipos": [
+        {
+            "id": 1,
+            "nombre": "Real Madrid",
+            "ciudad": "Madrid",
+            "estadio": "Santiago Bernabéu",
+            "fundacion": 1902,
+            "entrenador": "Carlo Ancelotti",
+            "logo": "img/equipos/real-madrid.png"
+        },
+        {
+            "id": 2,
+            "nombre": "FC Barcelona",
+            "ciudad": "Barcelona",
+            "estadio": "Spotify Camp Nou",
+            "fundacion": 1899,
+            "entrenador": "Xavi Hernández",
+            "logo": "img/equipos/barcelona.png"
+        },
+        {
+            "id": 3,
+            "nombre": "Girona FC",
+            "ciudad": "Girona",
+            "estadio": "Montilivi",
+            "fundacion": 1930,
+            "entrenador": "Míchel",
+            "logo": "img/equipos/girona.png"
+        },
+        {
+            "id": 4,
+            "nombre": "Atlético de Madrid",
+            "ciudad": "Madrid",
+            "estadio": "Cívitas Metropolitano",
+            "fundacion": 1903,
+            "entrenador": "Diego Simeone",
+            "logo": "img/equipos/atletico-madrid.png"
+        },
+        {
+            "id": 5,
+            "nombre": "Athletic Club",
+            "ciudad": "Bilbao",
+            "estadio": "San Mamés",
+            "fundacion": 1898,
+            "entrenador": "Ernesto Valverde",
+            "logo": "img/equipos/athletic.png"
+        },
+        {
+            "id": 6,
+            "nombre": "Real Sociedad",
+            "ciudad": "San Sebastián",
+            "estadio": "Reale Arena",
+            "fundacion": 1909,
+            "entrenador": "Imanol Alguacil",
+            "logo": "img/equipos/real-sociedad.png"
+        },
+        {
+            "id": 7,
+            "nombre": "Real Betis",
+            "ciudad": "Sevilla",
+            "estadio": "Benito Villamarín",
+            "fundacion": 1907,
+            "entrenador": "Manuel Pellegrini",
+            "logo": "img/equipos/betis.png"
+        },
+        {
+            "id": 8,
+            "nombre": "Valencia CF",
+            "ciudad": "Valencia",
+            "estadio": "Mestalla",
+            "fundacion": 1919,
+            "entrenador": "Rubén Baraja",
+            "logo": "img/equipos/valencia.png"
+        },
+        {
+            "id": 9,
+            "nombre": "Villarreal CF",
+            "ciudad": "Villarreal",
+            "estadio": "Estadio de la Cerámica",
+            "fundacion": 1923,
+            "entrenador": "Marcelino",
+            "logo": "img/equipos/villarreal.png"
+        },
+        {
+            "id": 10,
+            "nombre": "CA Osasuna",
+            "ciudad": "Pamplona",
+            "estadio": "El Sadar",
+            "fundacion": 1920,
+            "entrenador": "Jagoba Arrasate",
+            "logo": "img/equipos/osasuna.png"
+        },
+        {
+            "id": 11,
+            "nombre": "Deportivo Alavés",
+            "ciudad": "Vitoria",
+            "estadio": "Mendizorroza",
+            "fundacion": 1921,
+            "entrenador": "Luis García Plaza",
+            "logo": "img/equipos/alaves.png"
+        },
+        {
+            "id": 12,
+            "nombre": "Sevilla FC",
+            "ciudad": "Sevilla",
+            "estadio": "Ramón Sánchez-Pizjuán",
+            "fundacion": 1890,
+            "entrenador": "Quique Sánchez Flores",
+            "logo": "img/equipos/sevilla.png"
+        },
+        {
+            "id": 13,
+            "nombre": "RCD Mallorca",
+            "ciudad": "Palma",
+            "estadio": "Son Moix",
+            "fundacion": 1916,
+            "entrenador": "Javier Aguirre",
+            "logo": "img/equipos/mallorca.png"
+        },
+        {
+            "id": 14,
+            "nombre": "UD Las Palmas",
+            "ciudad": "Las Palmas",
+            "estadio": "Gran Canaria",
+            "fundacion": 1949,
+            "entrenador": "García Pimienta",
+            "logo": "img/equipos/las-palmas.png"
+        },
+        {
+            "id": 15,
+            "nombre": "Rayo Vallecano",
+            "ciudad": "Madrid",
+            "estadio": "Vallecas",
+            "fundacion": 1924,
+            "entrenador": "Iñigo Pérez",
+            "logo": "img/equipos/rayo.png"
+        },
+        {
+            "id": 16,
+            "nombre": "Getafe CF",
+            "ciudad": "Getafe",
+            "estadio": "Coliseum",
+            "fundacion": 1983,
+            "entrenador": "José Bordalás",
+            "logo": "img/equipos/getafe.png"
+        },
+        {
+            "id": 17,
+            "nombre": "RC Celta",
+            "ciudad": "Vigo",
+            "estadio": "Balaídos",
+            "fundacion": 1923,
+            "entrenador": "Rafael Benítez",
+            "logo": "img/equipos/celta.png"
+        },
+        {
+            "id": 18,
+            "nombre": "Cádiz CF",
+            "ciudad": "Cádiz",
+            "estadio": "Nuevo Mirandilla",
+            "fundacion": 1910,
+            "entrenador": "Mauricio Pellegrino",
+            "logo": "img/equipos/cadiz.png"
+        },
+        {
+            "id": 19,
+            "nombre": "Granada CF",
+            "ciudad": "Granada",
+            "estadio": "Nuevo Los Cármenes",
+            "fundacion": 1931,
+            "entrenador": "José Ramón Sandoval",
+            "logo": "img/equipos/granada.png"
+        },
+        {
+            "id": 20,
+            "nombre": "UD Almería",
+            "ciudad": "Almería",
+            "estadio": "Power Horse Stadium",
+            "fundacion": 1989,
+            "entrenador": "Pepe Mel",
+            "logo": "img/equipos/almeria.png"
+        }
+    ]
+}

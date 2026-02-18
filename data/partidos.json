@@ -1,0 +1,124 @@
+{
+    "partidos": [
+        {
+            "id": 1,
+            "jornada": 28,
+            "local": "Real Madrid",
+            "visitante": "FC Barcelona",
+            "fecha": "2024-04-21",
+            "hora": "21:00",
+            "estadio": "Santiago Bernabéu",
+            "resultado": "vs"
+        },
+        {
+            "id": 2,
+            "jornada": 28,
+            "local": "Atlético de Madrid",
+            "visitante": "Real Sociedad",
+            "fecha": "2024-04-20",
+            "hora": "18:30",
+            "estadio": "Cívitas Metropolitano",
+            "resultado": "2-1"
+        },
+        {
+            "id": 3,
+            "jornada": 28,
+            "local": "Girona FC",
+            "visitante": "Athletic Club",
+            "fecha": "2024-04-19",
+            "hora": "21:00",
+            "estadio": "Montilivi",
+            "resultado": "3-2"
+        },
+        {
+            "id": 4,
+            "jornada": 28,
+            "local": "Real Betis",
+            "visitante": "Valencia CF",
+            "fecha": "2024-04-20",
+            "hora": "16:15",
+            "estadio": "Benito Villamarín",
+            "resultado": "vs"
+        },
+        {
+            "id": 5,
+            "jornada": 28,
+            "local": "Villarreal CF",
+            "visitante": "CA Osasuna",
+            "fecha": "2024-04-21",
+            "hora": "14:00",
+            "estadio": "Estadio de la Cerámica",
+            "resultado": "1-1"
+        },
+        {
+            "id": 6,
+            "jornada": 29,
+            "local": "FC Barcelona",
+            "visitante": "Athletic Club",
+            "fecha": "2024-04-27",
+            "hora": "21:00",
+            "estadio": "Spotify Camp Nou",
+            "resultado": "vs"
+        },
+        {
+            "id": 7,
+            "jornada": 29,
+            "local": "Real Sociedad",
+            "visitante": "Real Madrid",
+            "fecha": "2024-04-26",
+            "hora": "21:00",
+            "estadio": "Reale Arena",
+            "resultado": "vs"
+        },
+        {
+            "id": 8,
+            "jornada": 29,
+            "local": "Atlético de Madrid",
+            "visitante": "Girona FC",
+            "fecha": "2024-04-27",
+            "hora": "18:30",
+            "estadio": "Cívitas Metropolitano",
+            "resultado": "vs"
+        },
+        {
+            "id": 9,
+            "jornada": 29,
+            "local": "Sevilla FC",
+            "visitante": "Real Betis",
+            "fecha": "2024-04-28",
+            "hora": "21:00",
+            "estadio": "Ramón Sánchez-Pizjuán",
+            "resultado": "vs"
+        },
+        {
+            "id": 10,
+            "jornada": 29,
+            "local": "Valencia CF",
+            "visitante": "RCD Mallorca",
+            "fecha": "2024-04-28",
+            "hora": "16:15",
+            "estadio": "Mestalla",
+            "resultado": "vs"
+        },
+        {
+            "id": 11,
+            "jornada": 30,
+            "local": "Real Madrid",
+            "visitante": "Athletic Club",
+            "fecha": "2024-05-04",
+            "hora": "21:00",
+            "estadio": "Santiago Bernabéu",
+            "resultado": "vs"
+        },
+        {
+            "id": 12,
+            "jornada": 30,
+            "local": "FC Barcelona",
+            "visitante": "Atlético de Madrid",
+            "fecha": "2024-05-05",
+            "hora": "21:00",
+            "estadio": "Spotify Camp Nou",
+            "resultado": "vs"
+        }
+    ]
+}
