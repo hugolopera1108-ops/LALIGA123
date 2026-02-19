@@ -1,18 +1,21 @@
-// Cargar datos desde los archivos JSON
-async function cargarDatos(tipo) {
+// Función para obtener datos de cualquier JSON
+async function fetchData(file) {
     try {
-const ruta = window.location.pathname.includes('/pages/') ? '../' : '';
-const respuesta = await fetch(`${ruta}data/${tipo}.json`);
-        if (!respuesta.ok) {
-            throw new Error('No se pudieron cargar los datos');
-        }
-        const datos = await respuesta.json();
-        return datos;
+        const response = await fetch(`../data/${file}`);
+        return await response.json();
     } catch (error) {
-        console.error('Error:', error);
-        return null;
+        console.error("Error cargando datos:", error);
     }
 }
+
+// Exportar para que otros archivos lo usen
+window.fetchData = fetchData;
+
+export async function cargarJSON(url) {
+    const res = await fetch(url);
+    return await res.json();
+}
+console.log("Módulo de datos cargado");
 
 // Variables globales para almacenar los datos
 let equiposData = null;
