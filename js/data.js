@@ -1,7 +1,8 @@
 // Cargar datos desde los archivos JSON
 async function cargarDatos(tipo) {
     try {
-        const respuesta = await fetch(`../data/${tipo}.json`);
+const ruta = window.location.pathname.includes('/pages/') ? '../' : '';
+const respuesta = await fetch(`${ruta}data/${tipo}.json`);
         if (!respuesta.ok) {
             throw new Error('No se pudieron cargar los datos');
         }
