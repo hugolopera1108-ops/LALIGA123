@@ -1,3 +1,4 @@
+// FootballHub v2.0 - Lógica de inicialización y carga de módulos
 // Inicialización
 document.addEventListener('DOMContentLoaded', async () => {
     console.log('Cargando página...');
