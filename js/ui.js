@@ -16,10 +16,12 @@ function mostrarEquipos(equipos, contenedorId) {
     equipos.forEach(equipo => {
         html += `
             <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center;">
-                <img src="${rutaBase}${equipo.logo}" 
-                     alt="${equipo.nombre}" 
-                     style="width: 80px; height: 80px; object-fit: contain; margin: 0 auto 15px; border-radius: 50%; background: #f0f0f0; padding: 5px; border: 3px solid #ffd700;"
-                     onerror="this.onerror=null; this.src='${rutaBase}img/equipos/default.png'; this.style.display='none'; this.parentNode.innerHTML += '<div style=\'width: 80px; height: 80px; background: #f0f0f0; border-radius: 50%; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; font-size: 30px; border: 3px solid #ffd700;\'>⚽</div>'">
+                <div style="width: 100px; height: 100px; margin: 0 auto 15px; display: flex; align-items: center; justify-content: center; background: #f0f0f0; border-radius: 50%; border: 3px solid #ffd700;">
+                    <img src="${rutaBase}${equipo.logo}" 
+                         alt="${equipo.nombre}" 
+                         style="width: 70px; height: 70px; object-fit: contain;"
+                         onerror="this.onerror=null; this.style.display='none'; this.parentNode.innerHTML += '<span style=\'font-size: 40px;\'>⚽</span>'">
+                </div>
                 <h3 style="margin: 10px 0; color: #1f1f2e;">${equipo.nombre}</h3>
                 <p style="margin: 5px 0;"><strong>📍 Ciudad:</strong> ${equipo.ciudad}</p>
                 <p style="margin: 5px 0;"><strong>🏟️ Estadio:</strong> ${equipo.estadio}</p>
@@ -85,10 +87,12 @@ function mostrarTabla(clasificacion, contenedorId) {
             <tr style="border-bottom: 1px solid #ddd; background: ${bgColor};">
                 <td style="padding: 12px; text-align: center;"><strong>${equipo.posicion}</strong></td>
                 <td style="padding: 12px; display: flex; align-items: center; gap: 10px;">
-                    <img src="${rutaBase}${logoUrl}" 
-                         alt="${equipo.equipo}" 
-                         style="width: 30px; height: 30px; object-fit: contain; border-radius: 50%; background: #f0f0f0; padding: 3px; border: 2px solid #ffd700;"
-                         onerror="this.onerror=null; this.src='${rutaBase}img/equipos/default.png'; this.style.display='none'; this.parentNode.innerHTML += '<span style=\'background: #ffd700; width: 30px; height: 30px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 16px;\'>⚽</span>' + this.parentNode.innerHTML;">
+                    <div style="width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; background: #f0f0f0; border-radius: 50%; border: 2px solid #ffd700;">
+                        <img src="${rutaBase}${logoUrl}" 
+                             alt="${equipo.equipo}" 
+                             style="width: 26px; height: 26px; object-fit: contain;"
+                             onerror="this.onerror=null; this.style.display='none'; this.parentNode.innerHTML += '<span style=\'font-size: 18px;\'>⚽</span>'">
+                    </div>
                     <strong>${equipo.equipo}</strong>
                 </td>
                 <td style="padding: 12px; text-align: center;">${equipo.pj}</td>
@@ -107,7 +111,7 @@ function mostrarTabla(clasificacion, contenedorId) {
     contenedor.innerHTML = html;
 }
 
-// Mostrar partidos (CON IMÁGENES LOCALES)
+// Mostrar partidos (VERSIÓN DEFINITIVA - TODO ALINEADO)
 function mostrarPartidos(partidos, contenedorId) {
     const contenedor = document.getElementById(contenedorId);
     if (!contenedor) return;
@@ -120,7 +124,7 @@ function mostrarPartidos(partidos, contenedorId) {
     // Detectar si estamos en la raíz o en pages para las rutas de imágenes
     const rutaBase = window.location.pathname.includes('/pages/') ? '../' : '';
     
-    let html = '<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 20px;">';
+    let html = '<div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px;">';
     
     partidos.forEach(partido => {
         const esJugado = partido.resultado !== 'vs';
@@ -137,40 +141,56 @@ function mostrarPartidos(partidos, contenedorId) {
         }
         
         html += `
-            <div style="background: white; border-radius: 10px; padding: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
-                <div style="background: #ffd700; color: #1f1f2e; padding: 5px 10px; border-radius: 15px; display: inline-block; font-weight: bold; margin-bottom: 15px;">
-                    Jornada ${partido.jornada}
+            <div style="background: white; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; flex-direction: column; height: 100%;">
+                <!-- Cabecera con jornada -->
+                <div style="padding: 15px 15px 0 15px;">
+                    <div style="background: #ffd700; color: #1f1f2e; padding: 5px 10px; border-radius: 15px; display: inline-block; font-weight: bold;">
+                        Jornada ${partido.jornada}
+                    </div>
                 </div>
                 
-                <div style="display: flex; justify-content: space-between; align-items: center; margin: 20px 0;">
-                    <div style="text-align: center; flex: 1;">
-                        <img src="${rutaBase}${logoLocal}" 
-                             alt="${partido.local}" 
-                             style="width: 50px; height: 50px; object-fit: contain; margin: 0 auto 5px; border-radius: 50%; background: #f0f0f0; padding: 5px; border: 2px solid #ffd700;"
-                             onerror="this.onerror=null; this.src='${rutaBase}img/equipos/default.png'; this.style.display='none'; this.parentNode.innerHTML += '<div style=\'width: 50px; height: 50px; background: #f0f0f0; border-radius: 50%; margin: 0 auto 5px; display: flex; align-items: center; justify-content: center;\'>⚽</div>' + this.parentNode.innerHTML;">
-                        <strong>${partido.local}</strong>
+                <!-- Contenedor principal que ocupa todo el espacio disponible -->
+                <div style="flex: 1; padding: 15px; display: flex; flex-direction: column;">
+                    <!-- Zona de equipos y resultado - centrado verticalmente -->
+                    <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+                        <!-- Equipo Local -->
+                        <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+                            <div style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; background: #f0f0f0; border-radius: 50%; border: 2px solid #ffd700;">
+                                <img src="${rutaBase}${logoLocal}" 
+                                     alt="${partido.local}" 
+                                     style="width: 50px; height: 50px; object-fit: contain;"
+                                     onerror="this.onerror=null; this.style.display='none'; this.parentNode.innerHTML += '<span style=\'font-size: 30px;\'>⚽</span>'">
+                            </div>
+                            <span style="font-weight: 600; text-align: center; font-size: 0.9rem;">${partido.local}</span>
+                        </div>
+                        
+                        <!-- Resultado -->
+                        <div style="min-width: 60px; text-align: center;">
+                            <span style="font-size: 1.8rem; font-weight: bold; color: #1f1f2e;">${partido.resultado}</span>
+                        </div>
+                        
+                        <!-- Equipo Visitante -->
+                        <div style="display: flex; flex-direction: column; align-items: center; flex: 1;">
+                            <div style="width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; margin-bottom: 8px; background: #f0f0f0; border-radius: 50%; border: 2px solid #ffd700;">
+                                <img src="${rutaBase}${logoVisitante}" 
+                                     alt="${partido.visitante}" 
+                                     style="width: 50px; height: 50px; object-fit: contain;"
+                                     onerror="this.onerror=null; this.style.display='none'; this.parentNode.innerHTML += '<span style=\'font-size: 30px;\'>⚽</span>'">
+                            </div>
+                            <span style="font-weight: 600; text-align: center; font-size: 0.9rem;">${partido.visitante}</span>
+                        </div>
                     </div>
                     
-                    <div style="font-size: 1.8rem; font-weight: bold; color: #1f1f2e; padding: 0 15px;">
-                        ${partido.resultado}
-                    </div>
-                    
-                    <div style="text-align: center; flex: 1;">
-                        <img src="${rutaBase}${logoVisitante}" 
-                             alt="${partido.visitante}" 
-                             style="width: 50px; height: 50px; object-fit: contain; margin: 0 auto 5px; border-radius: 50%; background: #f0f0f0; padding: 5px; border: 2px solid #ffd700;"
-                             onerror="this.onerror=null; this.src='${rutaBase}img/equipos/default.png'; this.style.display='none'; this.parentNode.innerHTML += '<div style=\'width: 50px; height: 50px; background: #f0f0f0; border-radius: 50%; margin: 0 auto 5px; display: flex; align-items: center; justify-content: center;\'>⚽</div>' + this.parentNode.innerHTML;">
-                        <strong>${partido.visitante}</strong>
+                    <!-- Información del partido -->
+                    <div style="border-top: 1px solid #eee; padding-top: 15px; margin-top: auto;">
+                        <p style="margin: 5px 0;"><strong>📅 Fecha:</strong> ${fechaStr}</p>
+                        <p style="margin: 5px 0;"><strong>⏰ Hora:</strong> ${partido.hora}</p>
+                        <p style="margin: 5px 0;"><strong>🏟️ Estadio:</strong> ${partido.estadio}</p>
                     </div>
                 </div>
                 
-                <div style="margin-top: 15px; padding-top: 15px; border-top: 1px solid #eee;">
-                    <p style="margin: 5px 0;"><strong>📅 Fecha:</strong> ${fechaStr}</p>
-                    <p style="margin: 5px 0;"><strong>⏰ Hora:</strong> ${partido.hora}</p>
-                    <p style="margin: 5px 0;"><strong>🏟️ Estadio:</strong> ${partido.estadio}</p>
-                </div>
-                
-                <div style="margin-top: 15px; text-align: center; padding: 8px; border-radius: 5px; background: ${esJugado ? '#d4edda' : '#fff3cd'}; color: ${esJugado ? '#155724' : '#856404'};">
+                <!-- Estado del partido - SIEMPRE AL FINAL -->
+                <div style="padding: 12px; text-align: center; border-radius: 0 0 10px 10px; background: ${esJugado ? '#d4edda' : '#fff3cd'}; color: ${esJugado ? '#155724' : '#856404'}; font-weight: 600; border-top: 1px solid rgba(0,0,0,0.05);">
                     ${esJugado ? '✅ Finalizado' : '⏳ Próximamente'}
                 </div>
             </div>
