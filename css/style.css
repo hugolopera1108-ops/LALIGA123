@@ -6,11 +6,9 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: linear-gradient(#FF4B44);
-    min-height: 100vh;
+    background: #f8f9fa; 
+    font-family: 'Inter', sans-serif;
+    color: #1f1f2e;
 }
 
 /* ===== HEADER ESTILO LALIGA (BLANCO) ===== */
@@ -439,3 +437,4 @@ footer {
     text-align: center;
     padding: 2rem;
 }
+css .card:hover { transform: scale(1.02); transition: all 0.3s ease; border-color: #ee3124; }
