@@ -97,10 +97,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const mensaje = document.getElementById('mensaje')?.value;
                 
                 if (nombre && email && mensaje && email.includes('@')) {
-                    mostrarMensajeExito('¡Mensaje enviado!');
+                    mostrarMensajeExito('¡Muchas gracias por tu mensaje!');
                     formulario.reset();
                 } else {
-                    alert('Por favor, completa todos los campos correctamente');
+                    alert('Por favor, completa todos los campos del formulario correctamente');
                 }
             });
         }
