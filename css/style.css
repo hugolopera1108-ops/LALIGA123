@@ -347,11 +347,23 @@ button:hover {
 
 /* ===== FOOTER ===== */
 footer {
+    background: linear-gradient(135deg, #ee3124 0%, #213038 100%);
     text-align: center;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     color: white;
     font-weight: 500;
+    border-top: 3px solid #ffd700; /* Misma línea dorada del header */
+    margin-top: 2rem;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 1px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* ===== RESPONSIVE ===== */
