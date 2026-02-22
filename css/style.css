@@ -418,7 +418,6 @@ footer p {
         height: 25px;
     }
 }
-/* Mejoras para las cards de partidos */
 .card h3 {
     color: #1f1f2e;
     border-bottom: 2px solid #ffd700;
@@ -430,7 +429,6 @@ footer p {
     color: #1f1f2e;
 }
 
-/* Estilo para mensajes de carga (SIN PARPADEO) */
 #equipos-contenedor p,
 #partidos-contenedor p,
 #tabla-contenedor p,
