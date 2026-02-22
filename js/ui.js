@@ -1,3 +1,7 @@
+// Variables para ordenación de la tabla
+let ordenAscendente = true;
+let columnaActual = 'posicion';
+
 // Mostrar equipos en la página (CON IMÁGENES LOCALES)
 function mostrarEquipos(equipos, contenedorId) {
     const contenedor = document.getElementById(contenedorId);
@@ -35,7 +39,7 @@ function mostrarEquipos(equipos, contenedorId) {
     contenedor.innerHTML = html;
 }
 
-// Mostrar tabla de clasificación (CON IMÁGENES LOCALES)
+// Mostrar tabla de clasificación (CON ORDENACIÓN SIMPLE)
 function mostrarTabla(clasificacion, contenedorId) {
     const contenedor = document.getElementById(contenedorId);
     if (!contenedor) return;
@@ -45,6 +49,22 @@ function mostrarTabla(clasificacion, contenedorId) {
         return;
     }
     
+    // Ordenar los datos
+    const datosOrdenados = [...clasificacion].sort((a, b) => {
+        let valorA = a[columnaActual];
+        let valorB = b[columnaActual];
+        
+        // Si es string (nombre del equipo), comparar sin mayúsculas
+        if (typeof valorA === 'string') {
+            valorA = valorA.toLowerCase();
+            valorB = valorB.toLowerCase();
+        }
+        
+        if (valorA < valorB) return ordenAscendente ? -1 : 1;
+        if (valorA > valorB) return ordenAscendente ? 1 : -1;
+        return 0;
+    });
+    
     // Detectar si estamos en la raíz o en pages para las rutas de imágenes
     const rutaBase = window.location.pathname.includes('/pages/') ? '../' : '';
     
@@ -52,27 +72,28 @@ function mostrarTabla(clasificacion, contenedorId) {
         <div style="overflow-x: auto; background: white; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
             <table style="width: 100%; border-collapse: collapse;">
                 <thead>
-                    <tr style="background: #1f1f2e; color: #ffd700;">
-                        <th style="padding: 12px;">Pos</th>
-                        <th style="padding: 12px;">Equipo</th>
-                        <th style="padding: 12px;">PJ</th>
-                        <th style="padding: 12px;">PG</th>
-                        <th style="padding: 12px;">PE</th>
-                        <th style="padding: 12px;">PP</th>
-                        <th style="padding: 12px;">GF</th>
-                        <th style="padding: 12px;">GC</th>
-                        <th style="padding: 12px;">DG</th>
-                        <th style="padding: 12px;">Pts</th>
+                    <tr style="background: #1f1f2e; color: white;">
+                        <th onclick="ordenarTabla('posicion')" style="padding: 12px; cursor: pointer;">Pos </th>
+                        <th onclick="ordenarTabla('equipo')" style="padding: 12px; cursor: pointer;">Equipo </th>
+                        <th onclick="ordenarTabla('pj')" style="padding: 12px; cursor: pointer;">PJ</th>
+                        <th onclick="ordenarTabla('pg')" style="padding: 12px; cursor: pointer;">PG</th>
+                        <th onclick="ordenarTabla('pe')" style="padding: 12px; cursor: pointer;">PE</th>
+                        <th onclick="ordenarTabla('pp')" style="padding: 12px; cursor: pointer;">PP</th>
+                        <th onclick="ordenarTabla('gf')" style="padding: 12px; cursor: pointer;">GF</th>
+                        <th onclick="ordenarTabla('gc')" style="padding: 12px; cursor: pointer;">GC</th>
+                        <th onclick="ordenarTabla('dg')" style="padding: 12px; cursor: pointer;">DG</th>
+                        <th onclick="ordenarTabla('puntos')" style="padding: 12px; cursor: pointer;">Pts </th>
                     </tr>
                 </thead>
                 <tbody>
     `;
     
-    clasificacion.forEach((equipo, index) => {
+    datosOrdenados.forEach((equipo, index) => {
+        // Color según posición (usando la posición original del JSON)
         let bgColor = 'white';
-        if (index < 4) bgColor = '#e8f5e9'; // Champions
-        else if (index < 6) bgColor = '#fff3e0'; // Europa
-        else if (index > 16) bgColor = '#ffebee'; // Descenso
+        if (equipo.posicion <= 4) bgColor = '#e8f5e9'; // Champions
+        else if (equipo.posicion <= 6) bgColor = '#fff3e0'; // Europa
+        else if (equipo.posicion >= 18) bgColor = '#ffebee'; // Descenso
         
         // Buscar el logo del equipo
         let logoUrl = '';
@@ -109,6 +130,21 @@ function mostrarTabla(clasificacion, contenedorId) {
     
     html += '</tbody></table></div>';
     contenedor.innerHTML = html;
+}
+
+// Función para ordenar la tabla
+function ordenarTabla(columna) {
+    if (columna === columnaActual) {
+        ordenAscendente = !ordenAscendente; // Cambiar dirección
+    } else {
+        columnaActual = columna;
+        ordenAscendente = true; // Por defecto ascendente
+    }
+    
+    // Volver a mostrar la tabla con el nuevo orden
+    if (tablaData && tablaData.clasificacion) {
+        mostrarTabla(tablaData.clasificacion, 'tabla-contenedor');
+    }
 }
 
 // Mostrar partidos (VERSIÓN DEFINITIVA - TODO ALINEADO)
@@ -199,4 +235,9 @@ function mostrarPartidos(partidos, contenedorId) {
     
     html += '</div>';
     contenedor.innerHTML = html;
+}
+
+// Mostrar mensaje de éxito en el formulario
+function mostrarMensajeExito(mensaje) {
+    alert('✅ ' + mensaje);
 }
