@@ -52,6 +52,76 @@
         },
         {
             "id": 6,
+            "jornada": 28,
+            "local": "Sevilla FC",
+            "visitante": "RCD Mallorca",
+            "fecha": "2024-04-20",
+            "hora": "21:00",
+            "estadio": "Ramón Sánchez-Pizjuán",
+            "resultado": "2-0"
+        },
+        {
+            "id": 7,
+            "jornada": 28,
+            "local": "UD Las Palmas",
+            "visitante": "Rayo Vallecano",
+            "fecha": "2024-04-20",
+            "hora": "14:00",
+            "estadio": "Gran Canaria",
+            "resultado": "vs"
+        },
+        {
+            "id": 8,
+            "jornada": 28,
+            "local": "Deportivo Alavés",
+            "visitante": "Getafe CF",
+            "fecha": "2024-04-21",
+            "hora": "16:15",
+            "estadio": "Mendizorroza",
+            "resultado": "1-0"
+        },
+        {
+            "id": 9,
+            "jornada": 28,
+            "local": "RC Celta",
+            "visitante": "Cádiz CF",
+            "fecha": "2024-04-21",
+            "hora": "18:30",
+            "estadio": "Balaídos",
+            "resultado": "vs"
+        },
+        {
+            "id": 10,
+            "jornada": 28,
+            "local": "Granada CF",
+            "visitante": "UD Almería",
+            "fecha": "2024-04-20",
+            "hora": "14:00",
+            "estadio": "Nuevo Los Cármenes",
+            "resultado": "1-1"
+        },
+        {
+            "id": 11,
+            "jornada": 28,
+            "local": "CA Osasuna",
+            "visitante": "Valencia CF",
+            "fecha": "2024-04-21",
+            "hora": "18:30",
+            "estadio": "El Sadar",
+            "resultado": "0-0"
+        },
+        {
+            "id": 12,
+            "jornada": 28,
+            "local": "Athletic Club",
+            "visitante": "Real Sociedad",
+            "fecha": "2024-04-22",
+            "hora": "21:00",
+            "estadio": "San Mamés",
+            "resultado": "vs"
+        },
+        {
+            "id": 13,
             "jornada": 29,
             "local": "FC Barcelona",
             "visitante": "Athletic Club",
@@ -61,7 +131,7 @@
             "resultado": "vs"
         },
         {
-            "id": 7,
+            "id": 14,
             "jornada": 29,
             "local": "Real Sociedad",
             "visitante": "Real Madrid",
@@ -71,7 +141,7 @@
             "resultado": "vs"
         },
         {
-            "id": 8,
+            "id": 15,
             "jornada": 29,
             "local": "Atlético de Madrid",
             "visitante": "Girona FC",
@@ -81,7 +151,7 @@
             "resultado": "vs"
         },
         {
-            "id": 9,
+            "id": 16,
             "jornada": 29,
             "local": "Sevilla FC",
             "visitante": "Real Betis",
@@ -91,7 +161,7 @@
             "resultado": "vs"
         },
         {
-            "id": 10,
+            "id": 17,
             "jornada": 29,
             "local": "Valencia CF",
             "visitante": "RCD Mallorca",
@@ -101,7 +171,77 @@
             "resultado": "vs"
         },
         {
-            "id": 11,
+            "id": 18,
+            "jornada": 29,
+            "local": "Villarreal CF",
+            "visitante": "Rayo Vallecano",
+            "fecha": "2024-04-27",
+            "hora": "14:00",
+            "estadio": "Estadio de la Cerámica",
+            "resultado": "vs"
+        },
+        {
+            "id": 19,
+            "jornada": 29,
+            "local": "Getafe CF",
+            "visitante": "UD Las Palmas",
+            "fecha": "2024-04-27",
+            "hora": "16:15",
+            "estadio": "Coliseum",
+            "resultado": "vs"
+        },
+        {
+            "id": 20,
+            "jornada": 29,
+            "local": "CA Osasuna",
+            "visitante": "Deportivo Alavés",
+            "fecha": "2024-04-28",
+            "hora": "14:00",
+            "estadio": "El Sadar",
+            "resultado": "vs"
+        },
+        {
+            "id": 21,
+            "jornada": 29,
+            "local": "Cádiz CF",
+            "visitante": "RC Celta",
+            "fecha": "2024-04-28",
+            "hora": "18:30",
+            "estadio": "Nuevo Mirandilla",
+            "resultado": "vs"
+        },
+        {
+            "id": 22,
+            "jornada": 29,
+            "local": "UD Almería",
+            "visitante": "Granada CF",
+            "fecha": "2024-04-27",
+            "hora": "21:00",
+            "estadio": "Power Horse Stadium",
+            "resultado": "vs"
+        },
+        {
+            "id": 23,
+            "jornada": 29,
+            "local": "Real Madrid",
+            "visitante": "Real Betis",
+            "fecha": "2024-04-29",
+            "hora": "21:00",
+            "estadio": "Santiago Bernabéu",
+            "resultado": "vs"
+        },
+        {
+            "id": 24,
+            "jornada": 29,
+            "local": "Girona FC",
+            "visitante": "Sevilla FC",
+            "fecha": "2024-04-29",
+            "hora": "19:00",
+            "estadio": "Montilivi",
+            "resultado": "vs"
+        },
+        {
+            "id": 25,
             "jornada": 30,
             "local": "Real Madrid",
             "visitante": "Athletic Club",
@@ -111,13 +251,113 @@
             "resultado": "vs"
         },
         {
-            "id": 12,
+            "id": 26,
             "jornada": 30,
             "local": "FC Barcelona",
             "visitante": "Atlético de Madrid",
             "fecha": "2024-05-05",
             "hora": "21:00",
             "estadio": "Spotify Camp Nou",
+            "resultado": "vs"
+        },
+        {
+            "id": 27,
+            "jornada": 30,
+            "local": "Girona FC",
+            "visitante": "Real Sociedad",
+            "fecha": "2024-05-04",
+            "hora": "18:30",
+            "estadio": "Montilivi",
+            "resultado": "vs"
+        },
+        {
+            "id": 28,
+            "jornada": 30,
+            "local": "Real Betis",
+            "visitante": "Sevilla FC",
+            "fecha": "2024-05-05",
+            "hora": "18:30",
+            "estadio": "Benito Villamarín",
+            "resultado": "vs"
+        },
+        {
+            "id": 29,
+            "jornada": 30,
+            "local": "Valencia CF",
+            "visitante": "Villarreal CF",
+            "fecha": "2024-05-04",
+            "hora": "16:15",
+            "estadio": "Mestalla",
+            "resultado": "vs"
+        },
+        {
+            "id": 30,
+            "jornada": 30,
+            "local": "RCD Mallorca",
+            "visitante": "Getafe CF",
+            "fecha": "2024-05-04",
+            "hora": "14:00",
+            "estadio": "Son Moix",
+            "resultado": "vs"
+        },
+        {
+            "id": 31,
+            "jornada": 30,
+            "local": "Rayo Vallecano",
+            "visitante": "CA Osasuna",
+            "fecha": "2024-05-05",
+            "hora": "14:00",
+            "estadio": "Vallecas",
+            "resultado": "vs"
+        },
+        {
+            "id": 32,
+            "jornada": 30,
+            "local": "Deportivo Alavés",
+            "visitante": "Cádiz CF",
+            "fecha": "2024-05-04",
+            "hora": "21:00",
+            "estadio": "Mendizorroza",
+            "resultado": "vs"
+        },
+        {
+            "id": 33,
+            "jornada": 30,
+            "local": "UD Las Palmas",
+            "visitante": "RC Celta",
+            "fecha": "2024-05-05",
+            "hora": "16:15",
+            "estadio": "Gran Canaria",
+            "resultado": "vs"
+        },
+        {
+            "id": 34,
+            "jornada": 30,
+            "local": "Granada CF",
+            "visitante": "Real Madrid",
+            "fecha": "2024-05-06",
+            "hora": "21:00",
+            "estadio": "Nuevo Los Cármenes",
+            "resultado": "vs"
+        },
+        {
+            "id": 35,
+            "jornada": 30,
+            "local": "Athletic Club",
+            "visitante": "Valencia CF",
+            "fecha": "2024-05-06",
+            "hora": "19:00",
+            "estadio": "San Mamés",
+            "resultado": "vs"
+        },
+        {
+            "id": 36,
+            "jornada": 30,
+            "local": "UD Almería",
+            "visitante": "Real Betis",
+            "fecha": "2024-05-06",
+            "hora": "21:00",
+            "estadio": "Power Horse Stadium",
             "resultado": "vs"
         }
     ]
