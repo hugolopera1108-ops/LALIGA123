@@ -430,21 +430,16 @@ footer p {
     color: #1f1f2e;
 }
 
-/* Animación de carga */
-@keyframes pulse {
-    0% { opacity: 0.6; }
-    50% { opacity: 1; }
-    100% { opacity: 0.6; }
-}
-
+/* Estilo para mensajes de carga (SIN PARPADEO) */
 #equipos-contenedor p,
 #partidos-contenedor p,
 #tabla-contenedor p,
 #ultimos-partidos p {
-    animation: pulse 1.5s ease-in-out infinite;
     color: #1f1f2e;
     font-size: 1.2rem;
     text-align: center;
     padding: 2rem;
 }
+
 css .card:hover { transform: scale(1.02); transition: all 0.3s ease; border-color: #ee3124; }
+
