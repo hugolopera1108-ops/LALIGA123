@@ -1,9 +1,56 @@
-# LALIGA123
-## Resolución de Conflictos
-Para cumplir con los requisitos del proyecto, se generó un conflicto de fusión (merge conflict) de forma intencionada:
+# ⚽ FootballHub - La Liga
 
-1. **Contexto:** Se modificó la primera línea del archivo `README.md` en dos ramas distintas de forma simultánea.
-   - En la rama **`main`**, se cambió el título a: `# LALIGA - ENTREGA FINAL JAN`.
-   - En la rama **`feature-estilos`**, se cambió el mismo título a: `# FootballHub v2.0 - Jan Guinovart (ASIX)`.
-2. **El Conflicto:** Al intentar realizar un `git merge feature-estilos` desde la rama `main`, Git detectó que la misma línea tenía contenidos diferentes y no pudo decidir cuál mantener, deteniendo el proceso de unión.
-3. **Resolución:** Se procedió a una resolución manual utilizando Visual Studio Code. Se eliminaron las marcas de conflicto (`&lt;&lt;&lt;&lt;&lt;&lt;&lt;`, `=======`, `>>>>>>>`) y se decidió dejar un título unificado: `# FootballHub - Proyecto La Liga`. Finalmente, se realizó un `git add` y un `git commit` para cerrar la fusión.
+Proyecto realizado para el módulo de ASIX. Web estática sobre La Liga española de fútbol con información de equipos, clasificación, partidos y contacto.
+
+## 👥 Autores
+- Hugo Lopera
+- Jan Guinovart
+
+## 📅 Fecha de entrega
+20 de Febrero de 2026
+
+## 🎯 Objetivo
+Crear una web estática completa utilizando varias páginas HTML, estilos organizados en CSS, interacción con JavaScript, datos en archivos JSON y control de versiones con Git y GitHub.
+
+## 🛠️ Tecnologías utilizadas
+- **HTML5** - Estructura de las páginas
+- **CSS3** - Estilos, Flexbox, Grid y diseño responsive
+- **JavaScript (Vanilla)** - Interactividad, filtros y validación
+- **JSON** - Almacenamiento de datos (equipos, tabla, partidos)
+- **Git/GitHub** - Control de versiones y trabajo colaborativo
+
+## 📁 Estructura del proyecto
+
+
+## ✨ Características implementadas
+
+### 📄 Páginas
+- **Inicio**: Presentación y últimos partidos destacados
+- **Equipos**: Listado con buscador por nombre/ciudad y filtro por ciudad
+- **Clasificación**: Tabla interactiva con ordenación por columnas (posición, puntos, goles, etc.)
+- **Partidos**: Calendario con filtros por jornada y equipo
+- **Contacto**: Formulario con validación en tiempo real
+
+### 🎨 Diseño
+- Cabecera con logo de LaLiga y navegación
+- Colores corporativos: rojo/blanco con detalles dorados
+- Cards para equipos y partidos
+- Tabla con colores diferenciados (Champions, Europa, Descenso)
+- **Diseño responsive** adaptable a móvil, tablet y escritorio
+
+### ⚙️ Funcionalidades JavaScript
+- Carga asíncrona de datos desde archivos JSON
+- Búsqueda en tiempo real en equipos
+- Filtros combinados (texto + ciudad / jornada + equipo)
+- Ordenación de tabla por cualquier columna (ascendente/descendente)
+- Validación de formulario de contacto
+
+## 📊 Datos incluidos
+- **20 equipos** de La Liga 2023-2024 con sus datos reales
+- **Clasificación actualizada** con estadísticas completas
+- **36 partidos** correspondientes a las jornadas 28, 29 y 30
+
+## 🔧 Instalación y uso
+1. Clonar el repositorio:
+   ```bash
+   git clone https://github.com/hugolopera1108-ops/LALIGA123.git
