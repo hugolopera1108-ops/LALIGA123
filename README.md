@@ -21,7 +21,6 @@ Crear una web estática completa utilizando varias páginas HTML, estilos organi
 
 ## 📁 Estructura del proyecto
 
-
 ## ✨ Características implementadas
 
 ### 📄 Páginas
@@ -36,7 +35,7 @@ Crear una web estática completa utilizando varias páginas HTML, estilos organi
 - Colores corporativos: rojo/blanco con detalles dorados
 - Cards para equipos y partidos
 - Tabla con colores diferenciados (Champions, Europa, Descenso)
-- **Diseño responsive** adaptable a móvil, tablet y escritorio
+- **Diseño responsive** adaptable a móvil, tablet 
 
 ### ⚙️ Funcionalidades JavaScript
 - Carga asíncrona de datos desde archivos JSON
